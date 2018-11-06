@@ -21,9 +21,9 @@ Funktionalität: Test der Navigations-Leiste
     Szenariogrundriss: Es gibt Suchergebnisse für ein Suchwort
         Wenn ich über das Suchfeld nach <suchwort> suche
         Dann werden die Suchergebnisse aufgelistet
-        Und es existiert <ergebnis> Suchergebnis
+        Und es wird <ergebnis> Suchergebnis aufgeführt
 
         Beispiele:
-        | suchwort      | ergebnis       |
-        | "Informatik"  | "mehr als ein" |
-        | "qwertzuiopü" | "kein"         |
+        | suchwort      | ergebnis         |
+        | "Informatik"  | "mindestens ein" |
+        | "qwertzuiopü" | "kein"           |
