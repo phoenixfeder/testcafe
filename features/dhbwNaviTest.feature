@@ -8,6 +8,7 @@ Funktionalität: Test der Navigations-Leiste
     Grundlage:
         Angenommen ich befinde mich auf der "Startseite der DHBW"
 
+    @only
     Szenario: Die Leiste klappt mit der Menü-Schaltfläche auf
         Wenn ich mit dem Mauszeiger auf "Menü" klicke
         Dann wird "die Navigationsleiste" angezeigt
@@ -17,13 +18,12 @@ Funktionalität: Test der Navigations-Leiste
          Und ich mit dem Mauszeiger auf "Schließen" klicke
          Dann wird "die Navigationsleiste" nicht angezeigt
 
-    @only
     Szenariogrundriss: Es gibt Suchergebnisse für ein Suchwort
         Wenn ich über das Suchfeld nach <suchwort> suche
         Dann werden die Suchergebnisse aufgelistet
-        Und es existiert mindestens <ergebnis> Suchergebnis
+        Und es wird <ergebnis> Suchergebnis aufgeführt
 
         Beispiele:
-        | suchwort      | ergebnis |
-        | "Informatik"  | 1        |
-        | "qwertzuiopü" | 0        |
+        | suchwort      | ergebnis         |
+        | "Informatik"  | "mindestens ein" |
+        | "qwertzuiopü" | "kein"           |
